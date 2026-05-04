@@ -1760,10 +1760,6 @@
     </button>
     <div class="theme-dropdown" id="themeDropdown">
       <div class="theme-dropdown-header">Theme wählen</div>
-      <button class="theme-option" data-theme="dark-warm">
-        <span class="theme-swatch" style="background:#0a0a0a;border:2px solid #f97316"></span>
-        <span class="theme-name">Dark Ember</span>
-      </button>
       <button class="theme-option" data-theme="light-warm">
         <span class="theme-swatch" style="background:#FDF8F3;border:2px solid #E07B39"></span>
         <span class="theme-name">Morning Light</span>
@@ -1833,22 +1829,6 @@
 
     // === THEME SWITCHER ===
     const themes = {
-      'dark-warm': {
-        name: 'Dark Ember',
-        vars: {
-          '--color-bg': '#0a0a0a',
-          '--color-surface': '#141414',
-          '--color-surface-hover': '#1a1a1a',
-          '--color-border': '#2a2a2a',
-          '--color-text': '#fafafa',
-          '--color-text-muted': '#888',
-          '--color-accent': '#f97316',
-          '--color-accent-hover': '#ea580c',
-          '--color-accent-light': 'rgba(249,115,22,0.1)',
-          '--gradient-hero': 'linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%)',
-          '--gradient-cta': 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)'
-        }
-      },
       'light-warm': {
         name: 'Morning Light',
         vars: {
@@ -1914,7 +1894,7 @@
     const urlParams = new URLSearchParams(window.location.search);
     const themeParam = urlParams.get('theme');
     const savedTheme = localStorage.getItem('guitar-theme');
-    applyTheme(themeParam || savedTheme || 'dark-warm');
+    applyTheme(themeParam || savedTheme || 'light-warm');
 
     // Theme dropdown toggle
     const themeSwitcher = document.getElementById('themeSwitcher');
