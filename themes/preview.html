@@ -9,46 +9,54 @@
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
     body { font-family: 'DM Sans', sans-serif; background: #1a1a1a; color: #fafafa; min-height: 100vh; padding: 2rem; }
-    h1 { text-align: center; margin-bottom: 2rem; font-size: 2rem; }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1600px; margin: 0 auto; }
-    .preview { border-radius: 16px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
-    .preview iframe { width: 100%; height: 600px; border: none; display: block; }
-    .labels { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; max-width: 1600px; margin: 1.5rem auto 0; }
-    .label { text-align: center; padding: 1rem; background: #222; border-radius: 8px; }
-    .label h2 { font-size: 1.1rem; margin-bottom: 0.5rem; }
-    .label p { color: #888; font-size: 0.85rem; }
-    .cta { display: inline-block; margin-top: 0.75rem; padding: 0.5rem 1.2rem; background: var(--accent); color: white; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.85rem; }
-    @media (max-width: 1100px) { .grid, .labels { grid-template-columns: 1fr; } }
+    h1 { text-align: center; margin-bottom: 0.5rem; font-size: 2rem; }
+    .subtitle { text-align: center; color: #888; margin-bottom: 2rem; font-size: 0.95rem; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 1800px; margin: 0 auto; }
+    .preview { border-radius: 12px; overflow: hidden; box-shadow: 0 15px 40px rgba(0,0,0,0.4); }
+    .preview iframe { width: 100%; height: 500px; border: none; display: block; }
+    .labels { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; max-width: 1800px; margin: 1rem auto 0; }
+    .label { text-align: center; padding: 0.8rem; background: #222; border-radius: 8px; }
+    .label h2 { font-size: 1rem; margin-bottom: 0.3rem; }
+    .label p { color: #888; font-size: 0.75rem; }
+    .label .psych { color: #aaa; font-size: 0.7rem; margin-top: 0.4rem; font-style: italic; }
+    .cta { display: inline-block; margin-top: 0.5rem; padding: 0.4rem 1rem; background: var(--accent); color: white; border-radius: 5px; text-decoration: none; font-weight: 600; font-size: 0.8rem; }
+    @media (max-width: 1200px) { .grid, .labels { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 700px) { .grid, .labels { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
-  <h1>🎸 Guitar Flow – 3 Themes</h1>
+  <h1>🎸 Guitar Flow – Theme Collection</h1>
+  <p class="subtitle">4 Farbschemas für deine Gitarrenlehrer-Landingpage</p>
   <div class="grid">
-    <div class="preview">
-      <iframe src="index.html?theme=dark-warm" title="Dark Ember"></iframe>
-    </div>
-    <div class="preview">
-      <iframe src="index.html?theme=light-warm" title="Morning Light"></iframe>
-    </div>
-    <div class="preview">
-      <iframe src="index.html?theme=turquoise-beige" title="Coastal Vibes"></iframe>
-    </div>
+    <div class="preview"><iframe src="index.html?theme=dark-warm" title="Dark Ember"></iframe></div>
+    <div class="preview"><iframe src="index.html?theme=light-warm" title="Morning Light"></iframe></div>
+    <div class="preview"><iframe src="index.html?theme=turquoise-beige" title="Coastal Vibes"></iframe></div>
+    <div class="preview"><iframe src="index.html?theme=sunset-amber" title="Sunset Amber"></iframe></div>
   </div>
   <div class="labels">
     <div class="label" style="--accent:#f97316">
       <h2>🌙 Dark Ember</h2>
-      <p>Energiegeladen & selbstbewusst</p>
-      <a href="?theme=dark-warm" class="cta">Live ansehen →</a>
+      <p>Energie & Stärke</p>
+      <p class="psych">Orange auf Schwarz</p>
+      <a href="?theme=dark-warm" class="cta">Ansehen →</a>
     </div>
     <div class="label" style="--accent:#E07B39">
       <h2>☀️ Morning Light</h2>
       <p>Warm & einladend</p>
-      <a href="?theme=light-warm" class="cta">Live ansehen →</a>
+      <p class="psych">Orange auf Creme</p>
+      <a href="?theme=light-warm" class="cta">Ansehen →</a>
     </div>
     <div class="label" style="--accent:#0D9488">
       <h2>🌊 Coastal Vibes</h2>
       <p>Erfrischend & entspannt</p>
-      <a href="?theme=turquoise-beige" class="cta">Live ansehen →</a>
+      <p class="psych">Türkis auf Beige</p>
+      <a href="?theme=turquoise-beige" class="cta">Ansehen →</a>
+    </div>
+    <div class="label" style="--accent:#D97706">
+      <h2>🍊 Sunset Amber</h2>
+      <p>Conversion-optimiert</p>
+      <p class="psych">Honig-Orange auf Creme</p>
+      <a href="?theme=sunset-amber" class="cta">Ansehen →</a>
     </div>
   </div>
 </body>

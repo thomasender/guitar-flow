@@ -1,0 +1,25 @@
+{
+  "name": "Sunset Amber",
+  "description": "Konversion- optimiert - warme Cremes mit Orange-Akzenten. Psychologisch aufs Buchen ausgelegt.",
+  "convertible": true,
+  "bestFor": "Maximale Buchungen generieren - ideal für Dienstleister die Termine verkaufen",
+  "psychology": {
+    "background": "Creme signalisiert Einladung und Wärme (nicht kalt-weiß)",
+    "primary": "Dunkles Warmbraun gibt Textelesbarkeit ohne harte Kontraste",
+    "accent": "Orange/Amber - highest CTR in A/B Tests, erzeugt Handlungsimpuls",
+    "cta": "Dunkler Orange-Brown auf Creme = starker Kontrast, warm & vertrauenswürdig"
+  },
+  "cssVariables": {
+    "--color-bg": "#FBF8F3",
+    "--color-surface": "#FFFFFF",
+    "--color-surface-hover": "#F5F0E8",
+    "--color-border": "#E8E0D4",
+    "--color-text": "#3D3530",
+    "--color-text-muted": "#7A706A",
+    "--color-accent": "#D97706",
+    "--color-accent-hover": "#B45309",
+    "--color-accent-subtle": "rgba(217,119,6,0.12)",
+    "--gradient-hero": "linear-gradient(135deg, #FBF8F3 0%, #F5EFE5 100%)",
+    "--gradient-cta": "linear-gradient(135deg, #D97706 0%, #B45309 100%)"
+  }
+}
