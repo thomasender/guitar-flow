@@ -1704,6 +1704,63 @@
         }
       });
     });
+
+    // === THEME SWITCHER ===
+    const themes = {
+      'dark-warm': {
+        name: 'Dark Ember',
+        vars: {
+          '--color-bg': '#0a0a0a',
+          '--color-surface': '#141414',
+          '--color-surface-hover': '#1a1a1a',
+          '--color-border': '#2a2a2a',
+          '--color-text': '#fafafa',
+          '--color-text-muted': '#888',
+          '--color-accent': '#f97316',
+          '--color-accent-hover': '#ea580c',
+          '--color-accent-light': 'rgba(249,115,22,0.1)',
+          '--gradient-hero': 'linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%)',
+          '--gradient-cta': 'linear-gradient(135deg, #f97316 0%, #ea580c 100%)'
+        }
+      },
+      'light-warm': {
+        name: 'Morning Light',
+        vars: {
+          '--color-bg': '#FDF8F3',
+          '--color-surface': '#FFFFFF',
+          '--color-surface-hover': '#F5F0EB',
+          '--color-border': '#E8E0D8',
+          '--color-text': '#2D2A26',
+          '--color-text-muted': '#6B6560',
+          '--color-accent': '#E07B39',
+          '--color-accent-hover': '#C96A2E',
+          '--color-accent-light': 'rgba(224,123,57,0.1)',
+          '--gradient-hero': 'linear-gradient(135deg, #FDF8F3 0%, #F5EDE4 100%)',
+          '--gradient-cta': 'linear-gradient(135deg, #E07B39 0%, #C96A2E 100%)'
+        }
+      }
+    };
+
+    function applyTheme(themeName) {
+      const theme = themes[themeName];
+      if (!theme) return;
+      const root = document.documentElement;
+      Object.entries(theme.vars).forEach(([prop, value]) => {
+        root.style.setProperty(prop, value);
+      });
+      document.body.dataset.theme = themeName;
+      localStorage.setItem('guitar-theme', themeName);
+    }
+
+    // Load theme from URL or localStorage
+    const urlParams = new URLSearchParams(window.location.search);
+    const themeParam = urlParams.get('theme');
+    const savedTheme = localStorage.getItem('guitar-theme');
+    applyTheme(themeParam || savedTheme || 'dark-warm');
+
+    // Expose for console testing
+    window.setTheme = applyTheme;
+    window.availableThemes = Object.keys(themes);
   </script>
 </body>
 </html>

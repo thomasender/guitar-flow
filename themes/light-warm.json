@@ -1,0 +1,19 @@
+{
+  "name": "Morning Light",
+  "description": "Warm, einladend & vertrauenswürdig - helles Theme das zum Buchen einlädt",
+  "convertible": true,
+  "bestFor": "Gitarrenlehrer die freundlich, zugänglich und einladend wirken wollen",
+  "cssVariables": {
+    "--color-bg": "#FDF8F3",
+    "--color-surface": "#FFFFFF",
+    "--color-surface-hover": "#F5F0EB",
+    "--color-border": "#E8E0D8",
+    "--color-text": "#2D2A26",
+    "--color-text-muted": "#6B6560",
+    "--color-accent": "#E07B39",
+    "--color-accent-hover": "#C96A2E",
+    "--color-accent-subtle": "rgba(224,123,57,0.1)",
+    "--gradient-hero": "linear-gradient(135deg, #FDF8F3 0%, #F5EDE4 100%)",
+    "--gradient-cta": "linear-gradient(135deg, #E07B39 0%, #C96A2E 100%)"
+  }
+}

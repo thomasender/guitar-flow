@@ -1,0 +1,19 @@
+{
+  "name": "Dark Ember",
+  "description": "Energiegeladen & einladend - dunkles Theme mit warmen Orange-Akzenten",
+  "convertible": true,
+  "bestFor": "Gitarrenlehrer die selbstbewusst, energisch und modern wirken wollen",
+  "cssVariables": {
+    "--color-bg": "#0a0a0a",
+    "--color-surface": "#141414",
+    "--color-surface-hover": "#1a1a1a",
+    "--color-border": "#2a2a2a",
+    "--color-text": "#fafafa",
+    "--color-text-muted": "#888888",
+    "--color-accent": "#f97316",
+    "--color-accent-hover": "#ea580c",
+    "--color-accent-subtle": "rgba(249,115,22,0.1)",
+    "--gradient-hero": "linear-gradient(135deg, #1a1a1a 0%, #0f0f0f 100%)",
+    "--gradient-cta": "linear-gradient(135deg, #f97316 0%, #ea580c 100%)"
+  }
+}
