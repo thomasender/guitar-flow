@@ -1,0 +1,19 @@
+{
+  "name": "Coastal Vibes",
+  "description": "Erfrischend & entspannt - türkis-beige Kombination für einen ruhigen, professionellen Auftritt",
+  "convertible": true,
+  "bestFor": "Gitarrenlehrer die locker, modern und trotzdem professionell wirken wollen",
+  "cssVariables": {
+    "--color-bg": "#F5F0E8",
+    "--color-surface": "#FFFFFF",
+    "--color-surface-hover": "#EDE8E0",
+    "--color-border": "#D9D3C8",
+    "--color-text": "#2C3E3A",
+    "--color-text-muted": "#6B7C78",
+    "--color-accent": "#0D9488",
+    "--color-accent-hover": "#0F766E",
+    "--color-accent-subtle": "rgba(13,148,136,0.1)",
+    "--gradient-hero": "linear-gradient(135deg, #F5F0E8 0%, #E8E4DA 100%)",
+    "--gradient-cta": "linear-gradient(135deg, #0D9488 0%, #0F766E 100%)"
+  }
+}
