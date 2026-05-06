@@ -155,7 +155,7 @@
       min-height: 100vh;
       display: flex;
       align-items: center;
-      padding: 120px 0 80px;
+      padding: 160px 0 120px;
       position: relative;
       overflow: hidden;
     }
@@ -318,7 +318,7 @@
        THOMAS — A personal introduction
     ═══════════════════════════════════ */
     .thomas-section {
-      padding: 100px 0;
+      padding: 140px 0;
       background: var(--color-bg);
     }
     .thomas-inner {
@@ -707,6 +707,70 @@
     }
 
     /* ═══════════════════════════════════
+       BELONG — Du gehörst hierher
+    ═══════════════════════════════════ */
+    .belong {
+      padding: 120px 0;
+      background: linear-gradient(180deg, var(--color-bg) 0%, var(--color-surface-warm) 100%);
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .belong::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--color-border), transparent);
+    }
+    .belong-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+    .belong-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--color-accent);
+      margin-bottom: 24px;
+      display: block;
+    }
+    .belong h2 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: 28px;
+      line-height: 1.15;
+    }
+    .belong h2 em {
+      color: var(--color-accent);
+      font-style: italic;
+    }
+    .belong-text {
+      font-size: 1.1rem;
+      color: var(--color-text-muted);
+      line-height: 1.85;
+      margin-bottom: 20px;
+      max-width: 540px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .belong-closing {
+      font-family: var(--font-serif);
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--color-text);
+      margin-top: 36px;
+    }
+    .belong-closing-sign {
+      margin-top: 12px;
+      font-style: normal;
+      font-family: var(--font-sans);
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ═══════════════════════════════════
        INVITATION — Gentle closing CTA
     ═══════════════════════════════════ */
     .invitation {
@@ -998,7 +1062,7 @@
         <p class="pulse-text">
           Du hast schon Tutorials geguckt. Vielleicht eine App ausprobiert. 
           Vielleicht sogar eine Gitarre gekauft, die dann in der Ecke stand. 
-          <strong>Das ist keine Schuld.</strong> Es fehlte nur jemand, der mit dir geht – 
+          <strong>Das ist nicht deine Schuld.</strong> Es fehlte nur jemand, der mit dir geht – 
           nicht vor dir herspaziert. Jemand, der dein Tempo kennt.
         </p>
       </div>
@@ -1027,8 +1091,8 @@
 
           <p class="thomas-story">
             Heute habe ich am <strong>Konservatorium in Feldkirch</strong> studiert, 
-            meinen Abschluss am <strong>Mozarteum</strong> gemacht, auf Bühnen gestanden, 
-            über 100 Schüler unterrichtet. Aber das ist nicht das, was mich wirklich ausmacht.
+            <strong>meinen</strong> Abschluss am <strong>Mozarteum</strong> gemacht, auf Bühnen gestanden, 
+            <strong>hunderte von Schülern</strong> unterrichtet. Aber das ist nicht das, was mich wirklich ausmacht.
           </p>
 
           <p class="thomas-story">
@@ -1086,7 +1150,7 @@
     <div class="container">
       <div class="how-header">
         <h2>So starten wir</h2>
-        <p>Alles beginnt mit einem einzigen, freien Schritt.</p>
+        <p>Alles beginnt mit einem unverbindlichen Kennenlerntermin (gratis).</p>
       </div>
 
       <div class="steps">
@@ -1250,8 +1314,8 @@
   <section class="stories" id="stimmen">
     <div class="container">
       <div class="stories-header">
-        <h2>Was andere sagen</h2>
-        <p>Echte Menschen, echte Worte. Geteilt mit Erlaubnis.</p>
+        <h2>Manche Stimmen</h2>
+        <p>Menschen, die den ersten Schritt gewagt haben. Und es nicht bereuen.</p>
       </div>
 
       <div class="stories-grid">
@@ -1306,29 +1370,55 @@
   </section>
 
   <!-- ═══════════════════════════════════
-       INVITATION — Gentle CTA
+       BELONG — Du gehörst hierher
+  ═══════════════════════════════════ -->
+  <section class="belong">
+    <div class="container">
+      <div class="belong-inner">
+        <span class="belong-eyebrow">Ein ehrliches Wort</span>
+        <h2>Du gehörst <em>hierher</em></h2>
+        <p class="belong-text">
+          Ich meine das. Kein Marketing-Satz, keine Floskel.<br>
+          Wenn du bis hierher gelesen hast, dann spürst du schon,
+          dass dieser Weg etwas für dich sein könnte.
+        </p>
+        <p class="belong-text">
+          Du musst nicht perfekt sein. Du musst nicht talentiert sein.
+          Du musst nur <strong>da sein wollen</strong> – und bereit sein,
+          den ersten Schritt zu machen. Den Rest gehen wir zusammen.
+        </p>
+        <p class="belong-closing">
+          „Wer auch immer du bist – du bist willkommen."
+        </p>
+        <p class="belong-closing-sign">— Thomas</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       INVITATION — Gentle closing CTA
   ═══════════════════════════════════ -->
   <section class="invitation" id="kennenlernen">
     <div class="container">
       <div class="invitation-inner">
-        <h2>Du musst dich nicht entscheiden. Nicht jetzt.</h2>
+        <h2>Wenn du bereit bist – ich bin es auch</h2>
         <p>
-          Schreib mir einfach. Sag hallo. Erzähl mir, was dich zur Musik zieht – 
-          und was dich bisher aufgehalten hat. Der Rest ist ein Gespräch, 
-          kein Vertrag. Wenn es sich gut anfühlt, machen wir weiter. 
-          Wenn nicht, war es trotzdem schön, dich kennengelernt zu haben.
+          Es muss nicht heute sein. Muss nicht morgen sein.
+          Aber wenn du spürst, dass es Zeit wird – dann freue ich mich,
+          von dir zu hören. Ein einfaches Hallo reicht völlig.
+          Der Rest ergibt sich.
         </p>
 
         <div class="invitation-buttons">
-          <a href="mailto:thomas.ender.dev@gmail.com?subject=Hallo%20Thomas%20–%20ich%20möchte%20kennenlernen" class="btn btn-primary btn-large">
-            E-Mail schreiben ✉️
+          <a href="mailto:thomas.ender.dev@gmail.com?subject=Hallo%20Thomas%20%E2%80%93%20ich%20m%C3%B6chte%20kennenlernen" class="btn btn-primary btn-large">
+            Schreib mir einfach ✉️
           </a>
           <a href="https://wa.me/" class="btn btn-secondary btn-large" target="_blank" rel="noopener">
             WhatsApp
           </a>
         </div>
 
-        <p class="invitation-note">Keine Kreditkarte · Kein Vertrag · 30 Minuten, nur du und ich</p>
+        <p class="invitation-note">Kein Druck · Kein Vertrag · 30 Minuten, nur du und ich</p>
       </div>
     </div>
   </section>
@@ -1380,9 +1470,7 @@
           <div class="faq-answer">
             <div class="faq-answer-inner">
               Talent ist ein Mythos, der Leute davon abhält, anzufangen. 
-              Was Musiker „Talent" nennen, ist meistens: richtige Anleitung, 
-              regelmäßiges Üben, und jemand, der Fehler korrigiert. 
-              Ich gebe dir alle drei.
+              Inspiration, regelmäßiges Üben, richtige Anleitung und jemand der dich manchmal an der Hand nimmt. Gar nicht soooo kompliziert :)
             </div>
           </div>
         </div>
@@ -1394,7 +1482,7 @@
           </button>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              Über 100 Schüler, online unterrichtet. Viele kamen nach Jahren mit YouTube 
+              <strong>Hunderte von Schülern</strong>, online unterrichtet. Viele kamen nach Jahren mit YouTube 
               und Apps zu mir. Der Unterschied: persönliches Feedback, das keine App ersetzt. 
               Online ist nicht zweitklassig – es ist flexibler.
             </div>
