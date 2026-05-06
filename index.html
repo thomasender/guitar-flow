@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="1:1 Gitarrenunterricht per Zoom mit Thomas. Konservatoriums-absolvent, 19+ Jahre Erfahrung. Spiele deine Lieblingssongs – personalisiert, flexibel, mit echtem Feedback.">
-  <meta name="keywords" content="Gitarrenunterricht, 1:1 Zoom Gitarre, Online Gitarrenkurs, Gitarre lernen, Akkorde lernen, Liedbegleitung, Fingerstyle">
+  <meta name="description" content="1:1 Gitarrenunterricht per Zoom mit Thomas. Bewusst. Persönlich. So lernst du die Musik, die in dir steckt – nicht aus YouTube-Tutorials, sondern auf deine Art.">
+  <meta name="keywords" content="Gitarrenunterricht, 1:1 Zoom Gitarre, Gitarre lernen, Herz, Musikalität, Online Gitarrenkurs, Liedbegleitung, Fingerstyle">
   <meta name="robots" content="index, follow">
   <meta property="og:title" content="GuitarFlow – 1:1 Gitarrenunterricht mit Thomas">
-  <meta property="og:description" content="Spiele deine Lieblingssongs. Dein Sound. Dein Ausdruck. 1:1 Coaching per Zoom – personalisiert, mit echtem Feedback.">
+  <meta property="og:description" content="Du wolltest schon immer Gitarre spielen – auf deine Art. 1:1 per Zoom, bewusst und persönlich.">
   <meta property="og:type" content="website">
-  <title>GuitarFlow – 1:1 Gitarrenunterricht per Zoom | Dein Ausdruck auf der Gitarre</title>
+  <title>GuitarFlow – Dein 1:1 Gitarrenunterricht mit Thomas</title>
   <link rel="canonical" href="https://guitar-flow.netlify.app/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,13 +21,13 @@
     :root {
       --color-bg: #FDF8F3;
       --color-surface: #FFFFFF;
-      --color-surface-hover: #F5F0EB;
+      --color-surface-warm: #F9F3EC;
       --color-border: #E8E0D8;
       --color-text: #2D2A26;
-      --color-text-muted: #6B6560;
-      --color-accent: #E07B39;
-      --color-accent-hover: #C96A2E;
-      --color-accent-light: rgba(224,123,57,0.1);
+      --color-text-muted: #7A736C;
+      --color-accent: #C97D4A;
+      --color-accent-hover: #B36A3A;
+      --color-accent-light: rgba(201,125,74,0.1);
       --font-sans: 'Outfit', system-ui, sans-serif;
       --font-serif: 'Playfair Display', Georgia, serif;
       --max-width: 1100px;
@@ -41,7 +41,7 @@
       font-family: var(--font-sans);
       background: var(--color-bg);
       color: var(--color-text);
-      line-height: 1.65;
+      line-height: 1.7;
       -webkit-font-smoothing: antialiased;
     }
     a { color: inherit; text-decoration: none; }
@@ -57,20 +57,11 @@
     h1, h2, h3 {
       font-family: var(--font-serif);
       font-weight: 600;
-      line-height: 1.15;
+      line-height: 1.2;
     }
-    h1 { font-size: clamp(2.4rem, 6vw, 3.8rem); }
-    h2 { font-size: clamp(1.8rem, 4vw, 2.8rem); }
-    h3 { font-size: clamp(1.2rem, 2.5vw, 1.5rem); }
-
-    .section-label {
-      font-size: 0.8rem;
-      font-weight: 600;
-      color: var(--color-accent);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      margin-bottom: 12px;
-    }
+    h1 { font-size: clamp(2.4rem, 6vw, 3.6rem); }
+    h2 { font-size: clamp(1.8rem, 4vw, 2.6rem); }
+    h3 { font-size: clamp(1.15rem, 2.5vw, 1.4rem); }
 
     /* === BUTTONS === */
     .btn {
@@ -90,12 +81,12 @@
     .btn-primary {
       background: var(--color-accent);
       color: white;
-      box-shadow: 0 4px 20px rgba(224,123,57,0.25);
+      box-shadow: 0 4px 20px rgba(201,125,74,0.25);
     }
     .btn-primary:hover {
       background: var(--color-accent-hover);
       transform: translateY(-2px);
-      box-shadow: 0 8px 30px rgba(224,123,57,0.35);
+      box-shadow: 0 8px 30px rgba(201,125,74,0.35);
     }
     .btn-secondary {
       background: transparent;
@@ -106,7 +97,7 @@
       border-color: var(--color-accent);
       color: var(--color-accent);
     }
-    .btn-large { padding: 20px 40px; font-size: 1.1rem; border-radius: 12px; }
+    .btn-large { padding: 18px 38px; font-size: 1.05rem; border-radius: 12px; }
     .btn-full { width: 100%; }
 
     /* === NAVIGATION === */
@@ -158,8 +149,7 @@
     }
 
     /* ═══════════════════════════════════
-       HERO — Customer is the HERO
-       StoryBrand: Character + Problem Hook
+       HERO — Warm invitation
     ═══════════════════════════════════ */
     .hero {
       min-height: 100vh;
@@ -176,7 +166,7 @@
       left: 50%;
       width: 160%;
       height: 120%;
-      background: radial-gradient(ellipse at 50% 0%, rgba(224,123,57,0.1) 0%, transparent 65%);
+      background: radial-gradient(ellipse at 50% 0%, rgba(201,125,74,0.08) 0%, transparent 65%);
       transform: translateX(-50%);
       pointer-events: none;
     }
@@ -188,37 +178,19 @@
       position: relative;
       z-index: 1;
     }
-    .hero-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 8px 18px;
-      background: var(--color-accent-light);
-      border-radius: 50px;
-      font-size: 0.875rem;
-      font-weight: 600;
-      color: var(--color-accent);
-      margin-bottom: 28px;
-    }
     .hero h1 {
-      margin-bottom: 24px;
+      margin-bottom: 20px;
     }
-    .hero h1 span {
+    .hero h1 em {
       color: var(--color-accent);
       font-style: italic;
     }
     .hero-sub {
-      font-size: 1.2rem;
+      font-size: 1.15rem;
       color: var(--color-text-muted);
-      margin-bottom: 12px;
-      max-width: 520px;
-    }
-    .hero-sub-highlight {
-      font-size: 1.05rem;
-      color: var(--color-text);
-      font-weight: 500;
-      margin-bottom: 36px;
-      max-width: 520px;
+      margin-bottom: 32px;
+      max-width: 500px;
+      line-height: 1.8;
     }
     .hero-actions {
       display: flex;
@@ -226,44 +198,15 @@
       flex-wrap: wrap;
       margin-bottom: 40px;
     }
-    /* New: Trust badges */
-    .hero-trust {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 16px;
-      margin-bottom: 36px;
-    }
-    .trust-badge {
+    .hero-reassure {
+      font-size: 0.9rem;
+      color: var(--color-text-muted);
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 0.85rem;
-      color: var(--color-text-muted);
-      font-weight: 500;
     }
-    .trust-badge svg {
-      width: 16px;
-      height: 16px;
+    .hero-reassure span {
       color: var(--color-accent);
-    }
-    /* Proof bar */
-    .hero-proof {
-      display: flex;
-      gap: 32px;
-      padding-top: 36px;
-      border-top: 1px solid var(--color-border);
-    }
-    .proof-item { text-align: center; }
-    .proof-number {
-      font-size: 2rem;
-      font-weight: 700;
-      color: var(--color-accent);
-      font-family: var(--font-serif);
-    }
-    .proof-label {
-      font-size: 0.8rem;
-      color: var(--color-text-muted);
-      margin-top: 2px;
     }
     /* Hero Visual */
     .hero-visual {
@@ -277,8 +220,8 @@
       border-radius: var(--radius-lg);
       overflow: hidden;
       position: relative;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
-      background: linear-gradient(145deg, #F5EDE4 0%, #E8E0D8 100%);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+      background: linear-gradient(145deg, #F5EDE4 0%, #EDE4D8 100%);
     }
     .guitar-illustration img {
       width: 100%;
@@ -334,441 +277,210 @@
     }
 
     /* ═══════════════════════════════════
-       THE PROBLEM — StoryBrand: Villain + FAILURE
+       PULSE — Why music calls to you
     ═══════════════════════════════════ */
-    .problem {
+    .pulse {
       padding: 100px 0;
       background: var(--color-surface);
     }
-    .problem-inner {
-      max-width: 800px;
+    .pulse-inner {
+      max-width: 720px;
       margin: 0 auto;
       text-align: center;
     }
-    .problem-inner h2 {
-      margin-bottom: 20px;
+    .pulse-inner h2 {
+      margin-bottom: 24px;
     }
-    .problem-sub {
-      font-size: 1.1rem;
+    .pulse-quote {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      font-style: italic;
       color: var(--color-text-muted);
-      margin-bottom: 52px;
-      line-height: 1.7;
-    }
-    .frustrations-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 24px;
-      text-align: left;
-    }
-    .frustration-card {
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 28px 24px;
-      transition: var(--transition);
-    }
-    .frustration-card:hover {
-      border-color: var(--color-accent);
-      transform: translateY(-3px);
-    }
-    .frustration-icon {
-      width: 48px;
-      height: 48px;
-      background: rgba(224,123,57,0.08);
-      border-radius: 12px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 16px;
-    }
-    .frustration-icon svg {
-      width: 24px;
-      height: 24px;
-      color: var(--color-accent);
-    }
-    .frustration-card h3 {
-      font-family: var(--font-sans);
-      font-size: 1rem;
-      font-weight: 700;
-      margin-bottom: 8px;
-    }
-    .frustration-card p {
-      font-size: 0.9rem;
-      color: var(--color-text-muted);
-      line-height: 1.6;
-    }
-    /* StoryBrand: Avoid Failure section */
-    .avoid-failure {
-      margin-top: 60px;
-      padding: 36px 40px;
-      background: linear-gradient(135deg, #2D2A26 0%, #3d3830 100%);
-      border-radius: var(--radius-lg);
-      text-align: center;
-      color: white;
-    }
-    .avoid-failure h3 {
-      font-size: 1.3rem;
-      margin-bottom: 16px;
-      color: white;
-    }
-    .avoid-failure p {
-      color: rgba(255,255,255,0.75);
-      font-size: 1rem;
-      max-width: 580px;
-      margin: 0 auto 24px;
-      line-height: 1.7;
-    }
-    .avoid-failure .btn-primary {
-      background: white;
-      color: var(--color-text);
-    }
-    .avoid-failure .btn-primary:hover {
-      background: var(--color-bg);
-      transform: translateY(-2px);
-    }
-    .problem-closing {
-      margin-top: 52px;
-      font-size: 1.05rem;
-      font-weight: 500;
-      color: var(--color-text);
-      max-width: 600px;
+      line-height: 1.8;
+      margin-bottom: 36px;
+      max-width: 620px;
       margin-left: auto;
       margin-right: auto;
     }
-    .problem-closing em {
-      color: var(--color-accent);
+    .pulse-quote strong {
+      color: var(--color-text);
       font-style: normal;
     }
-    @media (max-width: 768px) {
-      .frustrations-grid { grid-template-columns: 1fr; }
+    .pulse-text {
+      font-size: 1.05rem;
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      max-width: 580px;
+      margin: 0 auto;
     }
 
     /* ═══════════════════════════════════
-       THE GUIDE — Thomas
-       StoryBrand: Guide + Authority
+       THOMAS — A personal introduction
     ═══════════════════════════════════ */
-    .guide {
+    .thomas-section {
       padding: 100px 0;
       background: var(--color-bg);
     }
-    .guide-inner {
+    .thomas-inner {
       display: grid;
       grid-template-columns: 1fr 1fr;
       gap: 80px;
       align-items: center;
     }
-    .guide-photo {
+    .thomas-photo {
       aspect-ratio: 3/4;
       max-width: 440px;
       border-radius: var(--radius-lg);
       overflow: hidden;
       position: relative;
-      box-shadow: 0 20px 60px rgba(0,0,0,0.12);
-      background: linear-gradient(145deg, #F5EDE4 0%, #E8E0D8 100%);
+      box-shadow: 0 20px 60px rgba(0,0,0,0.1);
+      background: linear-gradient(145deg, #F5EDE4 0%, #EDE4D8 100%);
     }
-    .guide-photo img {
+    .thomas-photo img {
       width: 100%;
       height: 100%;
       object-fit: contain;
       object-position: center top;
     }
-    .guide-photo-badge {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      background: white;
-      border-radius: 12px;
-      padding: 14px 18px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-      display: flex;
-      align-items: center;
-      gap: 12px;
+    .thomas-content h2 {
+      margin-bottom: 24px;
     }
-    .badge-icon {
-      width: 40px;
-      height: 40px;
-      background: var(--color-accent-light);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .badge-icon svg {
-      width: 20px;
-      height: 20px;
+    .thomas-content h2 em {
       color: var(--color-accent);
-      opacity: 1;
+      font-style: italic;
     }
-    .badge-text {
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-    .badge-sub {
-      font-size: 0.75rem;
-      color: var(--color-text-muted);
-    }
-    .guide-content .section-label {
-      margin-bottom: 8px;
-    }
-    .guide-content h2 {
-      margin-bottom: 20px;
-    }
-    .guide-intro {
+    .thomas-story {
       font-size: 1.05rem;
       color: var(--color-text-muted);
+      line-height: 1.85;
       margin-bottom: 20px;
-      line-height: 1.75;
     }
-    .guide-credentials {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 16px;
-      margin-bottom: 36px;
-    }
-    .credential-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
-      font-size: 0.95rem;
-    }
-    .credential-icon {
-      width: 28px;
-      height: 28px;
-      background: var(--color-accent-light);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
-    .credential-icon svg {
-      width: 14px;
-      height: 14px;
-      color: var(--color-accent);
-    }
-    .guide-empathy {
-      background: var(--color-surface);
-      border-left: 4px solid var(--color-accent);
-      border-radius: 0 12px 12px 0;
-      padding: 20px 24px;
-      font-size: 0.95rem;
-      color: var(--color-text-muted);
-      font-style: italic;
-      line-height: 1.7;
-    }
-    .guide-empathy strong {
+    .thomas-story strong {
       color: var(--color-text);
-      font-style: normal;
-      font-weight: 600;
     }
-    /* Guarantee box */
-    .guide-guarantee {
-      margin-top: 24px;
+    .thomas-quote {
       background: var(--color-surface);
-      border: 2px solid var(--color-accent);
-      border-radius: var(--radius-lg);
-      padding: 20px 24px;
-      display: flex;
-      align-items: center;
-      gap: 16px;
+      border-radius: 16px;
+      padding: 28px 32px;
+      margin-top: 28px;
+      border-left: 4px solid var(--color-accent);
     }
-    .guarantee-icon {
-      width: 48px;
-      height: 48px;
-      background: var(--color-accent-light);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-shrink: 0;
+    .thomas-quote-text {
+      font-family: var(--font-serif);
+      font-size: 1.1rem;
+      font-style: italic;
+      color: var(--color-text);
+      line-height: 1.75;
+      margin-bottom: 12px;
     }
-    .guarantee-icon svg {
-      width: 24px;
-      height: 24px;
-      color: var(--color-accent);
-    }
-    .guarantee-text strong {
-      display: block;
-      font-weight: 700;
-      margin-bottom: 4px;
-    }
-    .guarantee-text span {
+    .thomas-quote-author {
       font-size: 0.9rem;
       color: var(--color-text-muted);
+      font-weight: 500;
     }
     @media (max-width: 900px) {
-      .guide-inner {
+      .thomas-inner {
         grid-template-columns: 1fr;
         gap: 40px;
       }
-      .guide-credentials { grid-template-columns: 1fr; }
     }
 
     /* ═══════════════════════════════════
-       SUCCESS — StoryBrand: Transformation
+       WHAT AWAITS — Soft outcomes
     ═══════════════════════════════════ */
-    .success {
+    .what-awaits {
       padding: 100px 0;
-      background: var(--color-surface);
+      background: var(--color-surface-warm);
     }
-    .success-header {
+    .what-awaits-header {
       text-align: center;
-      max-width: 700px;
-      margin: 0 auto 60px;
+      max-width: 680px;
+      margin: 0 auto 64px;
     }
-    .success-header h2 { margin-bottom: 16px; }
-    .success-header p {
+    .what-awaits-header h2 {
+      margin-bottom: 16px;
+    }
+    .what-awaits-header p {
       font-size: 1.05rem;
       color: var(--color-text-muted);
+      line-height: 1.7;
     }
-    .success-grid {
+    .awaits-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 28px;
     }
-    .success-card {
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
-      border-radius: var(--radius-lg);
-      padding: 32px 28px;
-      text-align: center;
-      transition: var(--transition);
-    }
-    .success-card:hover {
-      border-color: var(--color-accent);
-      transform: translateY(-3px);
-    }
-    .success-icon {
-      width: 64px;
-      height: 64px;
-      background: var(--color-accent);
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 20px;
-      box-shadow: 0 4px 16px rgba(224,123,57,0.25);
-    }
-    .success-icon svg {
-      width: 32px;
-      height: 32px;
-      color: white;
-    }
-    .success-card h3 {
-      font-family: var(--font-sans);
-      font-weight: 700;
-      font-size: 1.05rem;
-      margin-bottom: 10px;
-    }
-    .success-card p {
-      font-size: 0.9rem;
-      color: var(--color-text-muted);
-      line-height: 1.65;
-    }
-    @media (max-width: 900px) {
-      .success-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
-    }
-
-    /* ═══════════════════════════════════
-       WHAT YOU GET — StoryBrand: Plan
-    ═══════════════════════════════════ */
-    .offering {
-      padding: 100px 0;
-      background: var(--color-bg);
-    }
-    .offering-header {
-      text-align: center;
-      max-width: 700px;
-      margin: 0 auto 60px;
-    }
-    .offering-header h2 { margin-bottom: 16px; }
-    .offering-header p {
-      font-size: 1.05rem;
-      color: var(--color-text-muted);
-    }
-    .offering-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 28px;
-    }
-    .offering-card {
+    .await-card {
       background: var(--color-surface);
-      border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
-      padding: 32px 28px;
+      padding: 36px 28px;
+      text-align: center;
       transition: var(--transition);
     }
-    .offering-card:hover {
-      border-color: var(--color-accent);
-      transform: translateY(-3px);
-      box-shadow: 0 12px 40px rgba(224,123,57,0.08);
+    .await-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 16px 48px rgba(0,0,0,0.06);
     }
-    .offering-icon {
-      width: 56px;
-      height: 56px;
-      background: var(--color-accent);
-      border-radius: 14px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+    .await-emoji {
+      font-size: 2.8rem;
       margin-bottom: 20px;
-      box-shadow: 0 4px 16px rgba(224,123,57,0.25);
+      display: block;
     }
-    .offering-icon svg {
-      width: 28px;
-      height: 28px;
-      color: white;
-    }
-    .offering-card h3 {
+    .await-card h3 {
       font-family: var(--font-sans);
       font-weight: 700;
-      font-size: 1.05rem;
-      margin-bottom: 10px;
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: var(--color-text);
     }
-    .offering-card p {
+    .await-card p {
       font-size: 0.9rem;
       color: var(--color-text-muted);
-      line-height: 1.65;
+      line-height: 1.7;
     }
     @media (max-width: 900px) {
-      .offering-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+      .awaits-grid { grid-template-columns: 1fr; max-width: 440px; margin: 0 auto; }
     }
 
     /* ═══════════════════════════════════
-       THE PLAN — 3 simple steps
+       HOW IT WORKS — Gentle flow
     ═══════════════════════════════════ */
-    .plan {
+    .how-it-works {
       padding: 100px 0;
-      background: var(--color-surface);
+      background: var(--color-bg);
     }
-    .plan-header {
+    .how-header {
       text-align: center;
-      max-width: 650px;
-      margin: 0 auto 60px;
+      max-width: 600px;
+      margin: 0 auto 64px;
     }
-    .plan-header h2 { margin-bottom: 16px; }
-    .plan-header p {
+    .how-header h2 {
+      margin-bottom: 16px;
+    }
+    .how-header p {
       font-size: 1.05rem;
       color: var(--color-text-muted);
+      line-height: 1.7;
     }
-    .steps-list {
-      max-width: 720px;
+    .steps {
+      max-width: 700px;
       margin: 0 auto;
       display: flex;
       flex-direction: column;
       gap: 0;
     }
-    .step-item {
+    .step {
       display: grid;
       grid-template-columns: 80px 1fr;
       gap: 28px;
       align-items: start;
-      padding: 32px 0;
+      padding: 36px 0;
       border-bottom: 1px solid var(--color-border);
     }
-    .step-item:last-child { border-bottom: none; }
-    .step-num { text-align: center; }
+    .step:last-child { border-bottom: none; }
+    .step-num {
+      text-align: center;
+    }
     .step-num-circle {
       width: 56px;
       height: 56px;
@@ -789,34 +501,51 @@
       text-transform: uppercase;
       letter-spacing: 0.1em;
     }
-    .step-content h3 {
+    .step h3 {
       font-family: var(--font-sans);
       font-weight: 700;
       font-size: 1.15rem;
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      color: var(--color-text);
     }
-    .step-content p {
+    .step p {
       font-size: 0.95rem;
       color: var(--color-text-muted);
-      line-height: 1.7;
+      line-height: 1.75;
+    }
+    .step-cta {
+      margin-top: 16px;
+    }
+    .step-cta a {
+      color: var(--color-accent);
+      font-weight: 600;
+      font-size: 0.95rem;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .step-cta a:hover {
+      color: var(--color-accent-hover);
     }
 
     /* ═══════════════════════════════════
-       PRICING
+       YOUR INVESTMENT — Pricing
     ═══════════════════════════════════ */
-    .pricing {
+    .investment {
       padding: 100px 0;
-      background: var(--color-bg);
+      background: var(--color-surface);
     }
-    .pricing-header {
+    .investment-header {
       text-align: center;
-      max-width: 650px;
-      margin: 0 auto 52px;
+      max-width: 600px;
+      margin: 0 auto 56px;
     }
-    .pricing-header h2 { margin-bottom: 16px; }
-    .pricing-header p {
+    .investment-header h2 {
+      margin-bottom: 16px;
+    }
+    .investment-header p {
       font-size: 1.05rem;
       color: var(--color-text-muted);
+      line-height: 1.7;
     }
     .pricing-grid {
       display: grid;
@@ -825,8 +554,8 @@
       align-items: start;
     }
     .pricing-card {
-      background: var(--color-surface);
-      border: 2px solid var(--color-border);
+      background: var(--color-bg);
+      border: 1px solid var(--color-border);
       border-radius: var(--radius-lg);
       padding: 36px 28px;
       transition: var(--transition);
@@ -834,48 +563,36 @@
     }
     .pricing-card:hover {
       border-color: var(--color-accent);
+      box-shadow: 0 8px 32px rgba(201,125,74,0.08);
     }
-    .pricing-card.featured {
-      border-color: var(--color-accent);
-      box-shadow: 0 12px 50px rgba(224,123,57,0.15);
-      transform: scale(1.04);
-    }
-    .pricing-card.featured::before {
-      content: 'Empfohlen';
-      position: absolute;
-      top: -14px;
-      left: 50%;
-      transform: translateX(-50%);
-      background: var(--color-accent);
-      color: white;
-      padding: 5px 18px;
-      border-radius: 50px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+    .pricing-card.center {
+      background: var(--color-surface);
+      border: 2px solid var(--color-accent);
+      box-shadow: 0 12px 48px rgba(201,125,74,0.1);
     }
     .pricing-name {
-      font-size: 1.15rem;
-      font-weight: 700;
+      font-family: var(--font-serif);
+      font-size: 1.3rem;
+      font-weight: 600;
       margin-bottom: 6px;
     }
     .pricing-desc {
       font-size: 0.875rem;
       color: var(--color-text-muted);
       margin-bottom: 24px;
+      line-height: 1.6;
     }
     .pricing-amount {
       margin-bottom: 28px;
     }
     .pricing-number {
-      font-size: 3rem;
+      font-size: 2.8rem;
       font-weight: 700;
       font-family: var(--font-serif);
       color: var(--color-text);
     }
     .pricing-number span {
-      font-size: 1rem;
+      font-size: 0.95rem;
       font-weight: 400;
       color: var(--color-text-muted);
     }
@@ -894,6 +611,7 @@
       gap: 10px;
       padding: 10px 0;
       font-size: 0.9rem;
+      color: var(--color-text-muted);
       border-bottom: 1px solid var(--color-border);
     }
     .pricing-features li:last-child { border-bottom: none; }
@@ -904,91 +622,64 @@
       flex-shrink: 0;
       margin-top: 2px;
     }
-    .pricing-risk {
-      text-align: center;
-      font-size: 0.8rem;
-      color: var(--color-text-muted);
-      margin-top: 16px;
-    }
     @media (max-width: 900px) {
       .pricing-grid {
         grid-template-columns: 1fr;
         max-width: 420px;
         margin: 0 auto;
       }
-      .pricing-card.featured { transform: none; }
+      .pricing-card.center { border-width: 2px; }
     }
 
     /* ═══════════════════════════════════
-       TESTIMONIALS — StoryBrand: Success
+       STORIES — Testimonials
     ═══════════════════════════════════ */
-    .testimonials {
+    .stories {
       padding: 100px 0;
-      background: var(--color-surface);
+      background: var(--color-bg);
     }
-    .testimonials-header {
+    .stories-header {
       text-align: center;
-      max-width: 650px;
-      margin: 0 auto 52px;
+      max-width: 600px;
+      margin: 0 auto 56px;
     }
-    .testimonials-header h2 { margin-bottom: 16px; }
-    .testimonials-header p {
+    .stories-header h2 {
+      margin-bottom: 16px;
+    }
+    .stories-header p {
       font-size: 1.05rem;
       color: var(--color-text-muted);
+      line-height: 1.7;
     }
-    .testimonials-grid {
+    .stories-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 28px;
     }
-    .testimonial-card {
-      background: var(--color-bg);
-      border: 1px solid var(--color-border);
+    .story-card {
+      background: var(--color-surface);
       border-radius: var(--radius-lg);
       padding: 32px 28px;
       transition: var(--transition);
     }
-    .testimonial-card:hover {
-      border-color: var(--color-accent);
+    .story-card:hover {
       transform: translateY(-3px);
+      box-shadow: 0 12px 36px rgba(0,0,0,0.05);
     }
-    .testimonial-stars {
-      display: flex;
-      gap: 4px;
-      margin-bottom: 16px;
-    }
-    .testimonial-stars svg {
-      width: 18px;
-      height: 18px;
-      color: var(--color-accent);
-      fill: var(--color-accent);
-    }
-    /* StoryBrand: Result tag */
-    .testimonial-result {
-      display: inline-block;
-      background: var(--color-accent-light);
-      color: var(--color-accent);
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 4px 12px;
-      border-radius: 50px;
-      margin-bottom: 14px;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-    }
-    .testimonial-text {
-      font-size: 0.95rem;
-      color: var(--color-text);
-      line-height: 1.7;
-      margin-bottom: 20px;
+    .story-quote {
+      font-family: var(--font-serif);
+      font-size: 1rem;
       font-style: italic;
+      color: var(--color-text);
+      line-height: 1.75;
+      margin-bottom: 24px;
     }
-    .testimonial-author {
+    .story-author {
       display: flex;
       align-items: center;
       gap: 12px;
     }
-    .testimonial-avatar {
+    .story-avatar {
       width: 44px;
       height: 44px;
       background: var(--color-accent);
@@ -1001,21 +692,58 @@
       font-size: 1rem;
       flex-shrink: 0;
     }
-    .testimonial-name {
+    .story-name {
       font-weight: 700;
       font-size: 0.95rem;
+      color: var(--color-text);
     }
-    .testimonial-role {
+    .story-subtitle {
       font-size: 0.8rem;
       color: var(--color-text-muted);
       margin-top: 2px;
     }
     @media (max-width: 900px) {
-      .testimonials-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+      .stories-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
     }
 
     /* ═══════════════════════════════════
-       FAQ — StoryBrand: Objections
+       INVITATION — Gentle closing CTA
+    ═══════════════════════════════════ */
+    .invitation {
+      padding: 100px 0;
+      background: var(--color-surface-warm);
+    }
+    .invitation-inner {
+      max-width: 680px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .invitation-inner h2 {
+      margin-bottom: 20px;
+    }
+    .invitation-inner > p {
+      font-size: 1.1rem;
+      color: var(--color-text-muted);
+      line-height: 1.8;
+      margin-bottom: 40px;
+      max-width: 560px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .invitation-buttons {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 24px;
+    }
+    .invitation-note {
+      font-size: 0.875rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ═══════════════════════════════════
+       FAQ
     ═══════════════════════════════════ */
     .faq {
       padding: 100px 0;
@@ -1023,7 +751,7 @@
     }
     .faq-header {
       text-align: center;
-      max-width: 650px;
+      max-width: 600px;
       margin: 0 auto 52px;
     }
     .faq-header h2 { margin-bottom: 16px; }
@@ -1032,7 +760,7 @@
       color: var(--color-text-muted);
     }
     .faq-list {
-      max-width: 720px;
+      max-width: 680px;
       margin: 0 auto;
     }
     .faq-item {
@@ -1081,62 +809,6 @@
       font-size: 0.95rem;
       color: var(--color-text-muted);
       line-height: 1.75;
-    }
-
-    /* ═══════════════════════════════════
-       CTA BANNER — Final Call to Action
-    ═══════════════════════════════════ */
-    .cta-banner {
-      padding: 100px 0;
-      background: var(--color-accent);
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .cta-banner::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      background: radial-gradient(ellipse at 50% 50%, rgba(255,255,255,0.1) 0%, transparent 70%);
-    }
-    .cta-banner .container {
-      position: relative;
-      z-index: 1;
-    }
-    .cta-banner h2 {
-      color: white;
-      margin-bottom: 16px;
-    }
-    .cta-banner p {
-      color: rgba(255,255,255,0.85);
-      font-size: 1.1rem;
-      max-width: 560px;
-      margin: 0 auto 32px;
-      line-height: 1.7;
-    }
-    .cta-banner .btn-primary {
-      background: white;
-      color: var(--color-accent);
-    }
-    .cta-banner .btn-primary:hover {
-      background: var(--color-bg);
-      transform: translateY(-2px);
-    }
-    .cta-banner .btn-secondary {
-      border-color: rgba(255,255,255,0.5);
-      color: white;
-    }
-    .cta-banner .btn-secondary:hover {
-      border-color: white;
-      color: white;
-    }
-    .cta-sub {
-      color: rgba(255,255,255,0.7);
-      font-size: 0.9rem;
-      margin-top: 20px;
     }
 
     /* ═══════════════════════════════════
@@ -1225,7 +897,7 @@
       visibility: hidden;
       transition: var(--transition);
       z-index: 90;
-      box-shadow: 0 4px 16px rgba(224,123,57,0.3);
+      box-shadow: 0 4px 16px rgba(201,125,74,0.3);
     }
     .scroll-top.visible {
       opacity: 1;
@@ -1248,81 +920,45 @@
       <div class="nav-inner">
         <a href="#" class="nav-logo">Guitar<span>Flow</span></a>
         <ul class="nav-links">
-          <li><a href="#problem">Das Problem</a></li>
           <li><a href="#thomas">Thomas</a></li>
-          <li><a href="#angebot">Angebot</a></li>
-          <li><a href="#preis">Preise</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#was-dich-erwartet">Was dich erwartet</a></li>
+          <li><a href="#so-funktionierts">So startest du</a></li>
+          <li><a href="#preise">Preise</a></li>
+          <li><a href="#faq">Fragen</a></li>
         </ul>
-        <a href="#kontakt" class="nav-cta">Kostenlose Probestunde</a>
+        <a href="#kennenlernen" class="nav-cta">Kennenlernen</a>
       </div>
     </div>
   </nav>
 
   <!-- ═══════════════════════════════════
-       HERO — Customer is the HERO
-       StoryBrand: Character + Hook
+       HERO
   ═══════════════════════════════════ -->
   <section class="hero">
     <div class="container">
       <div class="hero-inner">
         <div class="hero-content">
-          <div class="hero-tag">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
-              <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
-            </svg>
-            1:1 Gitarrenunterricht per Zoom
-          </div>
-
-          <h1>Dein Lieblingssong. <span>Dein Sound.</span> Auf deiner Gitarre.</h1>
+          <h1>Es gibt diese Musik in dir.<br><em>Lass sie raus.</em></h1>
 
           <p class="hero-sub">
-            Stell dir vor: Du spielst deine Lieblingssongs. Du findest deinen eigenen Sound. 
-            Du improvisierst, drückst dich aus – auf eine Art, die ganz dir gehört.
-          </p>
-
-          <p class="hero-sub-highlight">
-            1:1 mit Thomas. In 90 Tagen zum ersten eigenen Song – oder dein Geld zurück.
+            Du hast schon immer gespürt, dass Gitarrespielen etwas für dich wäre. 
+            Vielleicht hast du es aufgeschoben. Vielleicht hast du es versucht – und aufgegeben. 
+            Das muss nicht so bleiben. Mit dem richtigen Begleiter an deiner Seite 
+            findet jeder Mensch seinen Weg zur Musik.
           </p>
 
           <div class="hero-actions">
-            <a href="#kontakt" class="btn btn-primary btn-large">
-              Kostenlose Probestunde 🎁
+            <a href="#kennenlernen" class="btn btn-primary btn-large">
+              Lass uns kennenlernen 🎁
             </a>
-            <a href="#angebot" class="btn btn-secondary btn-large">
-              Was ich biete
+            <a href="#was-dich-erwartet" class="btn btn-secondary btn-large">
+              Mehr erfahren
             </a>
           </div>
 
-          <div class="hero-trust">
-            <div class="trust-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Keine Kreditkarte nötig
-            </div>
-            <div class="trust-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              100% unverbindlich
-            </div>
-            <div class="trust-badge">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              14 Tage Geld-zurück
-            </div>
-          </div>
-
-          <div class="hero-proof">
-            <div class="proof-item">
-              <div class="proof-number">19+</div>
-              <div class="proof-label">Jahre Erfahrung</div>
-            </div>
-            <div class="proof-item">
-              <div class="proof-number">100+</div>
-              <div class="proof-label">Schüler unterrichtet</div>
-            </div>
-            <div class="proof-item">
-              <div class="proof-number">100%</div>
-              <div class="proof-label">1:1 Zoom Coaching</div>
-            </div>
-          </div>
+          <p class="hero-reassure">
+            <span>✦</span> Kostenlose Probestunde · Kein Risiko · 30 Minuten, nur dich und mich
+          </p>
         </div>
 
         <div class="hero-visual">
@@ -1335,8 +971,8 @@
                 </svg>
               </div>
               <div>
-                <div class="illustration-card-title">Thomas – dein Guide</div>
-                <div class="illustration-card-sub">Konservatorium & Mozarteum · Seit 2006</div>
+                <div class="illustration-card-title">Thomas</div>
+                <div class="illustration-card-sub">Dein Begleiter auf dem Weg zur Musik</div>
               </div>
             </div>
           </div>
@@ -1346,241 +982,67 @@
   </section>
 
   <!-- ═══════════════════════════════════
-       THE PROBLEM — StoryBrand: Villain + FAILURE
+       PULSE — Why music calls to you
   ═══════════════════════════════════ -->
-  <section class="problem" id="problem">
+  <section class="pulse" id="thomas">
     <div class="container">
-      <div class="problem-inner">
-        <span class="section-label">Das Problem</span>
-        <h2>Du willst Gitarre spielen. Aber irgendwas hält dich zurück.</h2>
-        <p class="problem-sub">
-          Du hast dir vorgenommen, Gitarre zu lernen. Vielleicht hast du es schon mal versucht – 
-          mit YouTube-Tutorials, Apps oder Büchern. Und trotzdem passiert nicht das, was du dir vorgestellt hast.
+      <div class="pulse-inner">
+        <h2>Vielleicht erkennst du dich ja hier wieder</h2>
+
+        <p class="pulse-quote">
+          <strong>Da ist dieses Lied.</strong> Das Lied, das du immer hören willst. 
+          Das dich irgendwie berührt. Und du denkst: Eines Tages werde ich das spielen können. 
+          Aber dieser Tag scheint nie zu kommen.
         </p>
 
-        <div class="frustrations-grid">
-          <div class="frustration-card">
-            <div class="frustration-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/>
-              </svg>
-            </div>
-            <h3>Frust statt Fortschritt</h3>
-            <p>Die Tutorials sind gut, aber du weißt nicht, ob du es richtig machst. Niemand korrigiert dich. Du bleibst stecken.</p>
-          </div>
-          <div class="frustration-card">
-            <div class="frustration-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/>
-              </svg>
-            </div>
-            <h3>Überfordert von allem</h3>
-            <p>Welche Gitarre? Welche Akkorde zuerst? Theorie oder einfach spielen? Es gibt so viele Wege – du weißt nicht, welcher deiner ist.</p>
-          </div>
-          <div class="frustration-card">
-            <div class="frustration-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-              </svg>
-            </div>
-            <h3>Keine Zeit für Kurse</h3>
-            <p>Präsenzunterricht passt nicht in deinen Alltag. Du brauchst etwas Flexibles – das sich deinem Leben anpasst, nicht umgekehrt.</p>
-          </div>
-          <div class="frustration-card">
-            <div class="frustration-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
-              </svg>
-            </div>
-            <h3>Kein echtes Feedback</h3>
-            <p>Bei YouTube oder Apps gibt niemand dir persönliches Feedback. Du übst Fehler ein, ohne es zu merken.</p>
-          </div>
-          <div class="frustration-card">
-            <div class="frustration-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
-              </svg>
-            </div>
-            <h3>Nachmachen, nicht verstehen</h3>
-            <p>Du lernst Songs nach, aber verstehst nicht, was du da eigentlich tust. Warum klingt das so? Woher weiß ich, was als nächstes kommt?</p>
-          </div>
-          <div class="frustration-card">
-            <div class="frustration-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/>
-              </svg>
-            </div>
-            <h3>Stillstand statt Spaß</h3>
-            <p>Die ersten Akkorde hast du gelernt – und dann? Du spielst immer dieselben zwei Akkorde. Fortschritt sieht anders aus.</p>
-          </div>
-        </div>
-
-        <!-- StoryBrand: Avoid Failure -->
-        <div class="avoid-failure">
-          <h3>Und wenn du weiter wartest?</h3>
-          <p>
-            Ein weiteres Jahr mit YouTube-Tutorials. Weitere 12 Monate, in denen du die Gitarre 
-            in die Ecke stellst. Weitere 365 Tage mit dem Gefühl: "Ich kann das nicht."
-          </p>
-          <p style="color: rgba(255,255,255,0.9); font-weight: 600; font-size: 1.05rem;">
-            Dein Lieblingssong? Wartet noch immer darauf, von dir gespielt zu werden. 
-            Und du weißt: Eigentlich willst du es lernen.
-          </p>
-          <a href="#kontakt" class="btn btn-primary">Kostenlose Probestunde – brich den Kreislauf</a>
-        </div>
-
-        <p class="problem-closing">
-          Das muss nicht so bleiben. Mit dem richtigen Begleiter an deiner Seite 
-          kommst du <em>endlich</em> dorthin, wo du hinwillst.
+        <p class="pulse-text">
+          Du hast schon Tutorials geguckt. Vielleicht eine App ausprobiert. 
+          Vielleicht sogar eine Gitarre gekauft, die dann in der Ecke stand. 
+          <strong>Das ist keine Schuld.</strong> Es fehlte nur jemand, der mit dir geht – 
+          nicht vor dir herspaziert. Jemand, der dein Tempo kennt.
         </p>
       </div>
     </div>
   </section>
 
   <!-- ═══════════════════════════════════
-       SUCCESS — StoryBrand: Transformation
+       THOMAS — Personal introduction
   ═══════════════════════════════════ -->
-  <section class="success" id="success">
+  <section class="thomas-section">
     <div class="container">
-      <div class="success-header">
-        <span class="section-label">Deine Transformation</span>
-        <h2>Was passiert, wenn du mit mir arbeitest</h2>
-        <p>Kein generischer Kurs. 1:1 Coaching, das auf dich zugeschnitten ist.</p>
-      </div>
-      <div class="success-grid">
-        <div class="success-card">
-          <div class="success-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
-            </svg>
-          </div>
-          <h3>Dein Lieblingssong – gespielt</h3>
-          <p>Du lernst die Songs, die du wirklich hören willst. Nicht generische Übungen – deine Musik.</p>
-        </div>
-        <div class="success-card">
-          <div class="success-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
-            </svg>
-          </div>
-          <h3>Echtes Feedback, echter Fortschritt</h3>
-          <p>Du weißt, was richtig ist und was nicht. Keine Fehler, die sich einschleichen. Schneller Fortschritt.</p>
-        </div>
-        <div class="success-card">
-          <div class="success-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
-            </svg>
-          </div>
-          <h3>Dein Ausdruck auf der Gitarre</h3>
-          <p>Du findest deinen eigenen Sound. Nicht nachmachen – ausdrücken. Musik, die von dir kommt.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════
-       THE GUIDE — Thomas
-  ═══════════════════════════════════ -->
-  <section class="guide" id="thomas">
-    <div class="container">
-      <div class="guide-inner">
-        <div class="guide-photo">
-          <img src="thomas.jpg" alt="Thomas – dein Gitarrenlehrer und Guide" loading="eager">
-          <div class="guide-photo-badge">
-            <div class="badge-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <polyline points="20 6 9 17 4 12"/>
-              </svg>
-            </div>
-            <div>
-              <div class="badge-text">Dein Guide</div>
-              <div class="badge-sub">Thomas – seit 2006</div>
-            </div>
-          </div>
+      <div class="thomas-inner">
+        <div class="thomas-photo">
+          <img src="thomas.jpg" alt="Thomas – dein Gitarrenlehrer" loading="eager">
         </div>
 
-        <div class="guide-content">
-          <span class="section-label">Dein Guide</span>
-          <h2>Ich bin Thomas. Und ich weiß, wie du deinen Weg zur Gitarre findest.</h2>
+        <div class="thomas-content">
+          <h2>Ich bin Thomas.<br><em>Und ich war auch mal dort.</em></h2>
 
-          <p class="guide-intro">
-            Ich war 14, als ich meine erste Gitarre in die Hand nahm. Und ich war furchtbar. 
-            Wochenlang habe ich versucht, einfache Akkorde zu greifen – und klang wie eine sterbende Katze.
+          <p class="thomas-story">
+            Mit 14 nahm ich meine erste Gitarre in die Hand. Und klang – 
+            na ja, sagen wir: ich klang nicht gut. Wochenlang. 
+            Ich weiß noch genau, wie sich das anfühlt: Diese Frustration, 
+            wenn die Finger nicht gehorchen. Wenn du übst und übst und es trotzdem nicht besser wird.
           </p>
 
-          <p class="guide-intro">
-            Ich weiß, wie es sich anfühlt, aufzugeben. Ich weiß, wie es sich anfühlt, wenn 
-            Tutorials nicht weiterhelfen und du stecken bleibst. Ich habe das <strong>alles</strong> durchgemacht.
+          <p class="thomas-story">
+            Heute habe ich am <strong>Konservatorium in Feldkirch</strong> studiert, 
+            meinen Abschluss am <strong>Mozarteum</strong> gemacht, auf Bühnen gestanden, 
+            über 100 Schüler unterrichtet. Aber das ist nicht das, was mich wirklich ausmacht.
           </p>
 
-          <p class="guide-intro">
-            Heute habe ich am <strong>Konservatorium in Feldkirch</strong> studiert, am <strong>Mozarteum</strong> 
-            meinen Abschluss gemacht, auf Bühnen gestanden und <strong>über 100 Schüler</strong> unterrichtet. 
-            Aber mehr als alles andere: Ich erinnere mich an das Gefühl, wenn die Finger nicht gehorchen wollen.
+          <p class="thomas-story">
+            <strong>Was mich ausmacht:</strong> Ich erinnere mich. An das Gefühl, stecken zu bleiben. 
+            An den Moment, in dem du aufgeben willst. Und ich weiß: Genau da braucht man 
+            jemanden, der einen sanft weiterführt. Nicht mit Druck. Mit Geduld.
           </p>
 
-          <p class="guide-intro">
-            <strong>Jeder Mensch hat seinen eigenen Weg zur Musik.</strong> 
-            Und ich bin da, um deinen zu finden – weil ich meinen auch erst nach vielen Jahren gefunden habe.
-          </p>
-
-          <div class="guide-credentials">
-            <div class="credential-item">
-              <div class="credential-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <span>Konservatorium Feldkirch</span>
-            </div>
-            <div class="credential-item">
-              <div class="credential-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <span>Abschluss am Mozarteum</span>
-            </div>
-            <div class="credential-item">
-              <div class="credential-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <span>19+ Jahre Bühnenerfahrung</span>
-            </div>
-            <div class="credential-item">
-              <div class="credential-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <span>100+ Schüler unterrichtet</span>
-            </div>
-            <div class="credential-item">
-              <div class="credential-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <span>Seit 2006 selbstständig</span>
-            </div>
-            <div class="credential-item">
-              <div class="credential-icon">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              </div>
-              <span>100% 1:1 Zoom Coaching</span>
-            </div>
-          </div>
-
-          <div class="guide-empathy">
-            <strong>Ich kenne das Gefühl, wenn Musik dich ruft.</strong> 
-            Und ich weiß, wie es sich anfühlt, endlich auf der Gitarre anzukommen – 
-            nicht nachzumachen, sondern auszudrücken. Das ist mein Versprechen an dich: 
-            Ich begleite dich auf deinem Weg. Ehrlich, geduldig, mit all meiner Erfahrung.
-          </div>
-
-          <div class="guide-guarantee">
-            <div class="guarantee-icon">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-              </svg>
-            </div>
-            <div class="guarantee-text">
-              <strong>14 Tage Geld-zurück-Garantie</strong>
-              <span>Du hast kein Risiko. Wenn du nach 14 Tagen nicht zufrieden bist, bekommst du dein Geld zurück.</span>
-            </div>
+          <div class="thomas-quote">
+            <p class="thomas-quote-text">
+              „Musik ist kein Ziel. Sie ist ein Weg. Ich gehe ihn mit dir – 
+              in deinem Tempo, mit deiner Musik, auf deine Art."
+            </p>
+            <p class="thomas-quote-author">— Thomas</p>
           </div>
         </div>
       </div>
@@ -1588,115 +1050,93 @@
   </section>
 
   <!-- ═══════════════════════════════════
-       WHAT YOU GET — StoryBrand: Plan
+       WHAT AWAITS — Soft outcomes
   ═══════════════════════════════════ -->
-  <section class="offering" id="angebot">
+  <section class="what-awaits" id="was-dich-erwartet">
     <div class="container">
-      <div class="offering-header">
-        <span class="section-label">Was ich dir biete</span>
-        <h2>Alles, was du für deinen Weg zur Gitarre brauchst</h2>
-        <p>1:1 Unterricht per Zoom. Personalisiert. Flexibel. Mit echtem Feedback – nicht von einer App.</p>
+      <div class="what-awaits-header">
+        <h2>Was passiert, wenn wir zusammen arbeiten</h2>
+        <p>Kein Programm. Kein Algorithmus. Nur wir beide, deine Musik, und Zeit.</p>
       </div>
 
-      <div class="offering-grid">
-        <div class="offering-card">
-          <div class="offering-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
-            </svg>
-          </div>
-          <h3>Dein Unterricht – 1:1 per Zoom</h3>
-          <p>Jede Stunde gilt ganz dir. Wir arbeiten an deinen Zielen – nicht an einem generischen Lehrplan. Akkorde, Leads, Improvisation, Theorie, Songs: was immer dich antreibt.</p>
+      <div class="awaits-grid">
+        <div class="await-card">
+          <span class="await-emoji">🎸</span>
+          <h3>Deine Songs – endlich gespielt</h3>
+          <p>Wir arbeiten an den Songs, die dich wirklich bewegen. Nicht an Übungen. An deiner Musik.</p>
         </div>
-        <div class="offering-card">
-          <div class="offering-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
-            </svg>
-          </div>
-          <h3>Persönliches Feedback</h3>
-          <p>Schick mir Videos oder Audiodateien deiner Übungen – per WhatsApp oder E-Mail. Ich gebe dir detailliertes, ehrliches Feedback. Nicht generisch, sondern spezifisch auf dich zugeschnitten.</p>
+        <div class="await-card">
+          <span class="await-emoji">🌱</span>
+          <h3>Verstehen, nicht nur nachmachen</h3>
+          <p>Du lernst, was du tust – und warum. Plötzlich macht alles Sinn. Auf einmal klickst du.</p>
         </div>
-        <div class="offering-card">
-          <div class="offering-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-            </svg>
-          </div>
-          <h3>Monatliche Live-Sessions</h3>
-          <p>1x pro Monat haben wir eine persönliche Zoom-Session. Für deine Fragen, deinen Fortschritt, neue Impulse. Direkter Austausch – nicht ersetzt durch eine App.</p>
-        </div>
-        <div class="offering-card">
-          <div class="offering-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-            </svg>
-          </div>
-          <h3>Wunsch-Songs werden umgesetzt</h3>
-          <p>Du träumst davon, ein bestimmtes Stück zu spielen? Sag mir welches – ich setze es für dich um und baue den Unterricht darum herum auf.</p>
-        </div>
-        <div class="offering-card">
-          <div class="offering-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
-            </svg>
-          </div>
-          <h3>In deinem Tempo</h3>
-          <p>Die Inhalte sind rund um die Uhr verfügbar, die Zoom-Sessions planen wir gemeinsam. Kein Stress, kein Druck – nur Fortschritt, der sich gut anfühlt.</p>
-        </div>
-        <div class="offering-card">
-          <div class="offering-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
-            </svg>
-          </div>
-          <h3>Flexible Themen</h3>
-          <p>Akkorde, Liedbegleitung, Fingerstyle, Acoustic, Electric, Sologitarre, Improvisation, Musiktheorie – alles ist möglich. Wir finden heraus, was dich am meisten antreibt.</p>
+        <div class="await-card">
+          <span class="await-emoji">💛</span>
+          <h3>Dein eigenes Ausdrucks</h3>
+          <p>Du findest deinen Sound. Nicht kopiert – erschaffen. Musik, die wirklich von dir kommt.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══════════════════════════════════
-       THE PLAN — 3 simple steps
+       HOW IT WORKS
   ═══════════════════════════════════ -->
-  <section class="plan" id="so-funktionierts">
+  <section class="how-it-works" id="so-funktionierts">
     <div class="container">
-      <div class="plan-header">
-        <span class="section-label">So startest du</span>
-        <h2>In drei Schritten zu deinem ersten Erfolg</h2>
-        <p>Es ist einfacher, als du denkst. Und alles beginnt mit einem einzigen Schritt.</p>
+      <div class="how-header">
+        <h2>So starten wir</h2>
+        <p>Alles beginnt mit einem einzigen, freien Schritt.</p>
       </div>
 
-      <div class="steps-list">
-        <div class="step-item">
+      <div class="steps">
+        <div class="step">
           <div class="step-num">
             <div class="step-num-circle">1</div>
             <div class="step-num-label">Schritt</div>
           </div>
-          <div class="step-content">
-            <h3>Kostenlose Probestunde buchen</h3>
-            <p>Schreib mir eine E-Mail oder ein WhatsApp. Wir vereinbaren einen 30-minütigen Zoom-Call – kostenlos, unverbindlich, freundlich. Keine Kreditkarte. Kein Risiko. Wir lernen uns kennen und finden heraus, wo du stehst und wohin du willst.</p>
+          <div>
+            <h3>Wir lernen uns kennen</h3>
+            <p>
+              Schreib mir einfach – per E-Mail oder WhatsApp. Wir vereinbaren einen 
+              30-minütigen Zoom-Call. Kostenlos, unverbindlich, freundlich. 
+              Kein Verkauf. Nur wir beide, ein Gespräch. Ich möchte wissen, 
+              wo du stehst und wohin du willst.
+            </p>
+            <p class="step-cta">
+              <a href="#kennenlernen">Schreib mir →</a>
+            </p>
           </div>
         </div>
-        <div class="step-item">
+
+        <div class="step">
           <div class="step-num">
             <div class="step-num-circle">2</div>
             <div class="step-num-label">Schritt</div>
           </div>
-          <div class="step-content">
-            <h3>Dein persönlicher Plan</h3>
-            <p>Gemeinsam erstellen wir einen klaren Fahrplan für deinen Weg: Welche Themen zuerst? Welche Songs als Ziele? Was ist dein Lieblingsgenre? Ich passe mich deinem Lernstil an – nicht umgekehrt.</p>
+          <div>
+            <h3>Dein Weg nimmt Form an</h3>
+            <p>
+              Gemeinsam finden wir heraus, was dich wirklich antreibt. 
+              Welche Songs du liebst. Welcher Stil zu dir passt. 
+              Wir bauen deinen Unterricht rund um dich – nicht umgekehrt.
+            </p>
           </div>
         </div>
-        <div class="step-item">
+
+        <div class="step">
           <div class="step-num">
             <div class="step-num-circle">3</div>
             <div class="step-num-label">Schritt</div>
           </div>
-          <div class="step-content">
-            <h3>Spielen. Wachsen. Deinen Ausdruck finden.</h3>
-            <p>Ab jetzt beginnt dein Weg: 1:1 Zoom-Sessions, persönliches Feedback, monatliche Live-Calls. Du wirst Fortschritte sehen – echte, spürbare. Und irgendwann merkst du: Du spielst Gitarre. Auf deine Art.</p>
+          <div>
+            <h3>Du beginnst zu spielen</h3>
+            <p>
+              Ab jetzt ist es real. 1:1 per Zoom, persönliches Feedback, 
+              Feedback auf deine Einsendungen zwischendurch. 
+              Du wirst Fortschritte sehen – echte. Und irgendwann merkst du: 
+              Ich spiele Gitarre. Auf meine Art.
+            </p>
           </div>
         </div>
       </div>
@@ -1704,198 +1144,160 @@
   </section>
 
   <!-- ═══════════════════════════════════
-       PRICING
+       YOUR INVESTMENT
   ═══════════════════════════════════ -->
-  <section class="pricing" id="preis">
+  <section class="investment" id="preise">
     <div class="container">
-      <div class="pricing-header">
-        <span class="section-label">Preise</span>
-        <h2>Finde das Paket, das zu dir passt</h2>
-        <p>Alle Pakete beinhalten persönliches Feedback und ehrliche Betreuung – keine Massenabfertigung.</p>
+      <div class="investment-header">
+        <h2>Dein Einstieg</h2>
+        <p>Wähle das, was gerade zu dir passt. Jeder Weg beginnt anders – aber alle führen zur selben Musik.</p>
       </div>
 
       <div class="pricing-grid">
-        <!-- Paket 1 -->
+        <!-- Free intro -->
         <div class="pricing-card">
           <div class="pricing-name">Kennenlernen</div>
-          <div class="pricing-desc">Perfekt für den ersten Schritt</div>
+          <div class="pricing-desc">Für den ersten, unverbindlichen Schritt</div>
           <div class="pricing-amount">
-            <div class="pricing-number">Kostenlos <span></span></div>
-            <div class="pricing-note">30 Minuten · unverbindlich</div>
+            <div class="pricing-number">Kostenlos</div>
+            <div class="pricing-note">30 Minuten · Zoom</div>
           </div>
           <ul class="pricing-features">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              30 Minuten persönlicher Zoom-Call
+              30 Minuten nur für dich
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Keine Kreditkarte nötig
+              Wir finden heraus, wo du stehst
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Wir lernen uns kennen
+              Kein Verkauf, kein Druck
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Gemeinsam finden wir deinen Startpunkt
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              100% unverbindlich & freundlich
+              100% unverbindlich
             </li>
           </ul>
-          <a href="#kontakt" class="btn btn-secondary btn-full">Probestunde buchen</a>
-          <p class="pricing-risk">Kein Risiko · Keine Kreditkarte</p>
+          <a href="#kennenlernen" class="btn btn-secondary btn-full">Termin buchen</a>
         </div>
 
-        <!-- Paket 2 — Featured -->
-        <div class="pricing-card featured">
-          <div class="pricing-name">1:1 Coaching</div>
-          <div class="pricing-desc">Volle persönliche Betreuung & fastest Fortschritt</div>
+        <!-- Single session -->
+        <div class="pricing-card center">
+          <div class="pricing-name">Einzelstunde</div>
+          <div class="pricing-desc">Wenn du只是想 ausprobieren willst – oder eine einzelne Stunde brauchst</div>
           <div class="pricing-amount">
-            <div class="pricing-number">99€ <span>/ Monat</span></div>
-            <div class="pricing-note">Jederzeit kündbar · 14 Tage Geld-zurück</div>
+            <div class="pricing-number">60€ <span>/ 50 Min</span></div>
+            <div class="pricing-note">Flexibel · 14 Tage Geld-zurück</div>
           </div>
           <ul class="pricing-features">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Alle Inhalte & Songtutorials
+              50 Minuten 1:1 per Zoom
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              1:1 Zoom-Session pro Monat (45 Min.)
+              Personalisiertes Feedback
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Persönliches Feedback auf Einsendungen
+              Thema nach Wahl
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Wunsch-Songs werden umgesetzt
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Wochen-Reminder (optional)
-            </li>
-            <li>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Jederzeit kündbar
+              Audio-/Videofeedback danach
             </li>
           </ul>
-          <a href="#kontakt" class="btn btn-primary btn-full">Jetzt starten</a>
-          <p class="pricing-risk">14 Tage Geld-zurück-Garantie</p>
+          <a href="#kennenlernen" class="btn btn-primary btn-full">Jetzt starten</a>
         </div>
 
-        <!-- Paket 3 -->
+        <!-- 10-pack -->
         <div class="pricing-card">
-          <div class="pricing-name">10er Paket</div>
-          <div class="pricing-desc">Für Schüler mit weniger Zeit</div>
+          <div class="pricing-name">10er Block</div>
+          <div class="pricing-desc">Für alle, die wirklich durchstarten wollen</div>
           <div class="pricing-amount">
-            <div class="pricing-number">79€ <span>/ Monat</span></div>
-            <div class="pricing-note">10 Zoom-Sessions · flexibel</div>
+            <div class="pricing-number">550€ <span>· 10 Einheiten</span></div>
+            <div class="pricing-note">Flexibel · 10 × 50 Min</div>
           </div>
           <ul class="pricing-features">
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              10 x 45 Minuten Zoom/Monat
+              10 × 50 Minuten 1:1 Zoom
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Alle Kursinhalte inklusive
+              Persönliches Audiofeedback
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Persönliches Feedback
+              Freiwillige Übungs-Reminder
             </li>
             <li>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-              Flexibel auf 2 Monate verteilbar
+              14 Tage Geld-zurück-Garantie
             </li>
           </ul>
-          <a href="#kontakt" class="btn btn-secondary btn-full">Mehr erfahren</a>
-          <p class="pricing-risk">Jederzeit kündbar</p>
+          <a href="#kennenlernen" class="btn btn-secondary btn-full">Mehr erfahren</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ═══════════════════════════════════
-       TESTIMONIALS — StoryBrand: Success
+       STORIES — Testimonials
   ═══════════════════════════════════ -->
-  <section class="testimonials" id="stimmen">
+  <section class="stories" id="stimmen">
     <div class="container">
-      <div class="testimonials-header">
-        <span class="section-label">Stimmen</span>
-        <h2>Was meine Schüler sagen</h2>
-        <p>Echte Worte von echten Menschen, die ihren Weg zur Gitarre gegangen sind.</p>
+      <div class="stories-header">
+        <h2>Was andere sagen</h2>
+        <p>Echte Menschen, echte Worte. Geteilt mit Erlaubnis.</p>
       </div>
 
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <span class="testimonial-result">🎸 Erster eigener Song nach 3 Monaten</span>
-          <p class="testimonial-text">
-            „Nach nur 3 Monaten habe ich angefangen, meine eigenen Akkordfolgen zu spielen. 
-            Endlich mache ich nicht nur Tutorials nach – ich spiele wirklich Musik. 
-            Mein erstes eigenes Stück kommt bald."
+      <div class="stories-grid">
+        <div class="story-card">
+          <p class="story-quote">
+            „Ich habe Jahre mit YouTube verbracht und nie das Gefühl gehabt, wirklich voranzukommen. 
+            Dann habe ich Thomas gefunden. Nach einem Monat habe ich angefangen, 
+            Songs zu spielen, die ich wirklich liebe. Das ist das erste Mal, 
+            dass Gitarre sich gut anfühlt."
           </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">A</div>
+          <div class="story-author">
+            <div class="story-avatar">A</div>
             <div>
-              <div class="testimonial-name">Axel B.</div>
-              <div class="testimonial-role">Gitarren-Schüler · 2024</div>
+              <div class="story-name">Axel B.</div>
+              <div class="story-subtitle">Gitarren-Schüler</div>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-card">
-          <div class="testimonial-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <span class="testimonial-result">🎯 Fingerstyle nach 6 Monaten</span>
-          <p class="testimonial-text">
-            „Ich wollte immer Fingerstyle spielen, aber bei YouTube bin ich nie über einfache Akkorde 
-            hinausgekommen. Mit Thomas habe ich nach 6 Monaten angefangen, richtig schöne 
-            Fingerstyle-Stücke zu spielen. Das hätte ich allein nie geschafft."
+        <div class="story-card">
+          <p class="story-quote">
+            „Ich war 42, als ich angefangen habe. Ich dachte, ich bin zu alt. 
+            Thomas hat mir gezeigt, dass das Unsinn ist. 
+            Heute spiele ich abends auf der Terrasse. 
+            Meine Nachbarn sind begeistert – und ich auch."
           </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">M</div>
+          <div class="story-author">
+            <div class="story-avatar">M</div>
             <div>
-              <div class="testimonial-name">Markus T.</div>
-              <div class="testimonial-role">Fortgeschrittener Anfänger</div>
+              <div class="story-name">Markus T.</div>
+              <div class="story-subtitle">Später Anfänger</div>
             </div>
           </div>
         </div>
 
-        <div class="testimonial-card">
-          <div class="testimonial-stars">
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-            <svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-          </div>
-          <span class="testimonial-result">👨‍👦 Übt jetzt freiwillig</span>
-          <p class="testimonial-text">
-            „Mein Sohn (12) hat alles Mögliche über YouTube probiert und dann aufgegeben. 
-            Mit Thomas übt er jetzt freiwillig. Endlich hat er das Gefühl: Ich kann das schaffen."
+        <div class="story-card">
+          <p class="story-quote">
+            „Mein Sohn (13) hatte jeden Tag Frust mit YouTube-Tutorials. 
+            Mit Thomas hat er nach zwei Monaten zum ersten Mal 
+            freiwillig zur Gitarre gegriffen. Das ist unbezahlbar."
           </p>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">S</div>
+          <div class="story-author">
+            <div class="story-avatar">S</div>
             <div>
-              <div class="testimonial-name">Sandra K.</div>
-              <div class="testimonial-role">Elternteil · seit 2024</div>
+              <div class="story-name">Sandra K.</div>
+              <div class="story-subtitle">Elternteil</div>
             </div>
           </div>
         </div>
@@ -1904,14 +1306,41 @@
   </section>
 
   <!-- ═══════════════════════════════════
-       FAQ — StoryBrand: Objections
+       INVITATION — Gentle CTA
+  ═══════════════════════════════════ -->
+  <section class="invitation" id="kennenlernen">
+    <div class="container">
+      <div class="invitation-inner">
+        <h2>Du musst dich nicht entscheiden. Nicht jetzt.</h2>
+        <p>
+          Schreib mir einfach. Sag hallo. Erzähl mir, was dich zur Musik zieht – 
+          und was dich bisher aufgehalten hat. Der Rest ist ein Gespräch, 
+          kein Vertrag. Wenn es sich gut anfühlt, machen wir weiter. 
+          Wenn nicht, war es trotzdem schön, dich kennengelernt zu haben.
+        </p>
+
+        <div class="invitation-buttons">
+          <a href="mailto:thomas.ender.dev@gmail.com?subject=Hallo%20Thomas%20–%20ich%20möchte%20kennenlernen" class="btn btn-primary btn-large">
+            E-Mail schreiben ✉️
+          </a>
+          <a href="https://wa.me/" class="btn btn-secondary btn-large" target="_blank" rel="noopener">
+            WhatsApp
+          </a>
+        </div>
+
+        <p class="invitation-note">Keine Kreditkarte · Kein Vertrag · 30 Minuten, nur du und ich</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FAQ
   ═══════════════════════════════════ -->
   <section class="faq" id="faq">
     <div class="container">
       <div class="faq-header">
-        <span class="section-label">Noch unsicher?</span>
-        <h2>Hier kommen die echten Antworten</h2>
-        <p>Fragen, die mir Schüler VOR der Probestunde stellen. Weil Einwände OK sind.</p>
+        <h2>Fragen, die mir Menschen vor dem Start stellen</h2>
+        <p>Und meine ehrlichen Antworten darauf.</p>
       </div>
 
       <div class="faq-list">
@@ -1922,8 +1351,8 @@
           </button>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              Nein! Für den Start reicht eine einfache Akustik- oder E-Gitarre. 
-              Wir besprechen bei der ersten Stunde, was für deine Ziele am besten passt – 
+              Nein. Für den Anfang reicht eine einfache Akustik- oder E-Gitarre. 
+              Wir besprechen in der ersten Stunde, was für deine Ziele passt – 
               und ob sich eine Investition lohnt.
             </div>
           </div>
@@ -1931,14 +1360,14 @@
 
         <div class="faq-item">
           <button class="faq-question">
-            Bin ich nicht schon zu alt für Gitarre?
+            Bin ich nicht schon zu alt?
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
           </button>
           <div class="faq-answer">
             <div class="faq-answer-inner">
               Die ältesten Schüler, die ich unterrichtet habe, waren über 60. 
-              Musik hat kein Alter. Was zählt: du willst es. Und mit dem richtigen 
-              Feedback geht es schneller als du denkst.
+              Musik hat kein Alter. Was zählt: du willst es. 
+              Und mit dem richtigen Feedback geht es schneller, als du denkst.
             </div>
           </div>
         </div>
@@ -1951,37 +1380,9 @@
           <div class="faq-answer">
             <div class="faq-answer-inner">
               Talent ist ein Mythos, der Leute davon abhält, anzufangen. 
-              Was Musiker "Talent" nennen, ist in 90% der Fälle: richtige Anleitung, 
-              regelmäßiges Üben, und jemand der Fehler korrigiert. 
+              Was Musiker „Talent" nennen, ist meistens: richtige Anleitung, 
+              regelmäßiges Üben, und jemand, der Fehler korrigiert. 
               Ich gebe dir alle drei.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            Ich habe keine Zeit...
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Wenn du 15 Minuten am Tag für YouTube-Tutorials hast, hast du Zeit für Unterricht. 
-              Wir arbeiten mit deinem Zeitbudget, nicht gegen es. 
-              Und ehrliches Feedback spart dir sogar Zeit – du lernst effizienter als mit Apps.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            Wie flexibel ist das?
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Sehr! Du bestimmst dein Tempo. Die Inhalte sind 24/7 verfügbar, 
-              und wir finden gemeinsam einen Zoom-Termin, der in deinen Kalender passt. 
-              Du kannst jederzeit kündigen – ohne versteckte Kosten.
             </div>
           </div>
         </div>
@@ -1993,9 +1394,23 @@
           </button>
           <div class="faq-answer">
             <div class="faq-answer-inner">
-              Über 100 Schüler, online unterrichtet. Viele sind nach Jahren mit YouTube und Apps 
-              zu mir gekommen. Der Unterschied: Persönliches Feedback, das du bei keiner App bekommst. 
+              Über 100 Schüler, online unterrichtet. Viele kamen nach Jahren mit YouTube 
+              und Apps zu mir. Der Unterschied: persönliches Feedback, das keine App ersetzt. 
               Online ist nicht zweitklassig – es ist flexibler.
+            </div>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            Ich habe Angst, anzufangen und dann aufzugeben
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-inner">
+              Das verstehe ich wirklich. Deshalb ist die Probestunde kostenlos – 
+              damit du erstmal spüren kannst, ob es sich gut anfühlt. 
+              Und wenn ja, gehen wir Schritt für Schritt. In deinem Tempo. Ohne Druck.
             </div>
           </div>
         </div>
@@ -2009,47 +1424,11 @@
             <div class="faq-answer-inner">
               Nichts – außer, du willst es. Die Probestunde ist wirklich unverbindlich. 
               Wir lernen uns kennen, ich schaue, wo du stehst, und dann entscheidest du, 
-              ob du weitermachen willst. Kein Druck.
-            </div>
-          </div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-question">
-            Was wenn ich eine Frage habe?
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
-          </button>
-          <div class="faq-answer">
-            <div class="faq-answer-inner">
-              Du kannst mir jederzeit schreiben – als Text, Sprachnachricht oder Video. 
-              Ich antworte persönlich und so schnell wie möglich. Bei komplizierteren Fragen 
-              nutzen wir die monatliche Zoom-Session.
+              ob du weitermachen willst. Kein Druck, kein Vertrag.
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- ═══════════════════════════════════
-       CTA BANNER — StoryBrand: Final CTA
-  ═══════════════════════════════════ -->
-  <section class="cta-banner" id="kontakt">
-    <div class="container">
-      <h2>Bereit, deinen Weg zur Gitarre zu starten?</h2>
-      <p>
-        Schreib mir einfach eine E-Mail oder WhatsApp-Nachricht. 
-        Wir vereinbaren deine kostenlose Probestunde – 30 Minuten, Zoom, komplett unverbindlich.
-      </p>
-      <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 20px;">
-        <a href="mailto:thomas.ender.dev@gmail.com?subject=Kostenlose%20Probestunde%20Gitarre" class="btn btn-primary btn-large">
-          Jetzt E-Mail schreiben 🎁
-        </a>
-        <a href="https://wa.me/" class="btn btn-secondary btn-large" target="_blank" rel="noopener">
-          WhatsApp
-        </a>
-      </div>
-      <p class="cta-sub">Keine Kreditkarte · Kein Risiko · 30 Minuten Zoom · Komplett kostenlos</p>
     </div>
   </section>
 
@@ -2061,11 +1440,10 @@
       <div class="footer-inner">
         <a href="#" class="footer-logo">Guitar<span>Flow</span></a>
         <ul class="footer-links">
-          <li><a href="#problem">Das Problem</a></li>
           <li><a href="#thomas">Thomas</a></li>
-          <li><a href="#angebot">Angebot</a></li>
-          <li><a href="#preis">Preise</a></li>
-          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#was-dich-erwartet">Was dich erwartet</a></li>
+          <li><a href="#preise">Preise</a></li>
+          <li><a href="#faq">Fragen</a></li>
         </ul>
         <div class="footer-social">
           <a href="#" aria-label="Instagram">
